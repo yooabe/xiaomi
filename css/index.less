@@ -1,0 +1,162 @@
+.site-toper{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    background-color: #333;
+    
+    .container{
+        height: 40px;
+        font-size: 12.4px;
+        position: relative;
+
+        a{
+            color: #b0b0b0;
+            line-height: 40px;
+            display: inline-block;
+            transition: all .1s;
+
+            &:hover{
+                color: #fff;
+            }
+        }
+        
+        .sep{
+            color: #424242;
+            margin: 0 .3em;
+        }
+
+        .topbar-nav{
+            float: left;
+        }
+        .cartTrigger{
+            float: right;
+            em{
+                font-size: 15px;
+                line-height: 12px;
+                margin-right: .4em;
+            }
+
+            a{
+                width: 120px;
+                text-align: center;
+                background-color: #424242;
+                margin-left: 3em;
+                transition: all .2s;
+                &:hover{
+                    color: #ff6700;
+                    background-color: #fff;
+                }
+            }
+        }
+        .userInfo{
+            float: right;
+        }
+    }
+    
+}
+.site-header{
+    .container{
+        height: 100px;
+        line-height: 100px;
+        .header-logo{
+                margin-top: 22px;
+                width: 55px;
+                height: 55px;
+                float: left;
+                position: relative;
+                overflow: hidden;
+                
+                a{
+                    width: 55px;
+                    height: 55px;
+                    left: 0;
+                    position: absolute;
+                    background-image: url(/img/mi-logo.png);
+                    background-color: #ff6700;
+                    background-position: center;
+                    transition: left .2s;
+                }
+                .mi-home{
+                    background-image: url(/img/mi-home.png);
+                    left: -55px;
+                }
+                &:hover{
+                    .mi-logo{
+                        left: 55px;
+                    }
+                    .mi-home{
+                        left: 0;
+                    }
+                }
+        }
+        .header-nav{
+            // height: 100px;
+            float: left;
+            margin-left: 7px;
+            ul{
+                width: 850px;
+                height: 100px;
+                padding-left: 58px;
+                li{
+                    float: left;
+                    a{
+                        display: inline-block;
+                        font-size: 16px;
+                        color: #333;
+                        padding: 0 10px;
+                        transition: color .1s;
+                        &:hover{
+                            color: #ff6700;
+                        }
+                    }
+                    .all-goods{
+                        visibility: hidden;
+                    }
+                }
+            }
+        }
+        .header-search{
+            float: right;
+            width: 300px;
+            height: 50px;
+            background-color: red;
+            margin-top: 25px;
+            
+            input{
+                border: none;
+                float: left;
+                width: 250px;
+                height: 50px;
+                padding: 0 10px;
+                font-size: 20px;
+                border: 1px solid #e0e0e0;
+                border-right: none;
+                &:focus,&:focus+.search-btn{
+                    border-color: #ff6700;
+                }
+
+            }
+            button{
+                float: left;
+                width: 50px;
+                height: 50px;
+                line-height: 50px;
+                padding: 0;
+                border: 1px solid #e0e0e0;
+                background-color: #fff;
+                transition: background-color .2s;
+                &:hover{
+                    background-color: #ff6700;
+                    em{
+                        color: #fff;
+                    }
+                }
+                em{
+                    font-size: 22px;
+                    font-weight: bold;
+                    transition: all .2s;
+                }
+            }
+        }
+    }
+}
